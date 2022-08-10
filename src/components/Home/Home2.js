@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
+import my from "../../Assets/my.png"
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,26 +20,31 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
+              I fell in love to Build Something and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
+                <b className="purple"> Javascript and Python</b>
+              </i>
+              <br />
+              <br />And also i have worked on using these languages and technologies
+              <i>
+                <b className="purple"> Java , AWS etc... </b>
               </i>
               <br />
               <br />
               My field of Interest's are building new &nbsp;
               <i>
                 <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                also{" "}
                 <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
+                  i want to build our own company<span style={{ padding: 10,color:'rgba(255, 0, 0, 0.8)'}}> Qickzo</span> 
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
+              Now i'am on the mission that the learning MERN stack to build products thats are
               with <b className="purple">Node.js</b> and
               <i>
                 <b className="purple">
@@ -48,13 +54,19 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js </b>
               </i>
+              <br/>
+              <br/>
+              &nbsp;
+              If you want to build a project ,just contact the <i>
+                <b className="purple"> QICKZO.COM </b>
+              </i>we are ready to build the project
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img style={{padding:"10px"}} src={my} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -67,7 +79,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/shaheermohamed"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -75,7 +87,7 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href="https://twitter.com/Soumyajit4419"
                   target="_blank"
@@ -84,10 +96,10 @@ function Home2() {
                 >
                   <AiOutlineTwitter />
                 </a>
-              </li>
+              </li> */}
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/mohamed-shaheer-c-p-75238a1b1/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -95,7 +107,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
                   target="_blank"
@@ -104,7 +116,7 @@ function Home2() {
                 >
                   <AiFillInstagram />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </Col>
         </Row>
