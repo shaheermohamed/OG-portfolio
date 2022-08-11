@@ -28,7 +28,7 @@ function contact() {
   }
   return (
     <section>
-        <Container style={{marginTop:'190px',marginLeft:'450px'}} className="hsome-section" id="home">
+        <Container style={{marginTop:'190px'}} className="hsome-section" id="home">
         {/* <Particle /> */}
          <Container className="home-content"> 
            <Row>  
