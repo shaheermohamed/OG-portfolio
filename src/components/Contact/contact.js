@@ -4,7 +4,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import './contact.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import { useRef } from 'react';
+import { useRef as UseRef  } from 'react';
 import emailjs from 'emailjs-com';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -12,7 +12,7 @@ import Form from 'react-bootstrap/Form';
 
 
 function contact() {
-    const formRef = useRef()
+    const formRef = UseRef()
  
   const handleSubmit = (e)=>{
     e.preventDefault()
@@ -28,10 +28,10 @@ function contact() {
   }
   return (
     <section>
-      {/* <Container fluid className="home-section" id="home">
-        <Particle />
-        {/* <Container className="home-content"> */}
-          {/* {/* <Row> */}
+        <Container style={{marginTop:'190px',marginLeft:'450px'}} className="hsome-section" id="home">
+        {/* <Particle /> */}
+         <Container className="home-content"> 
+           <Row>  
              <Col md={7} style={{height:'100vh'}} className="home-header">  
               {/* <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
@@ -79,7 +79,7 @@ function contact() {
       </Form.Group> 
       <Form.Group className="mb-3" controlId="formBasicMessage">
         <Form.Label>Your Message</Form.Label>
-        <Form.Control type="message"name="message" placeholder="Enter email" />
+        <Form.Control style={{padding:"40px"}} type="message"name="message" placeholder="Enter Your Message" />
         {/* <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text> */}
@@ -93,12 +93,12 @@ function contact() {
         Submit
       </Button>
     </Form>
-  
+    <Particle />
 
-              {/* <div style={{ padding: 50, textAlign: "left" }}>
+               <div style={{ padding: 50, textAlign: "left" }}>
                 
               </div>
-            </Col>
+             </Col> 
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
@@ -106,12 +106,12 @@ function contact() {
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "800px" }}
-              />*/}
+              />
             </Col> 
-          {/*</Row>
+           </Row>
         </Container>
-      </Container>
-       */}
+      </Container> 
+       
     </section>
   )
 }

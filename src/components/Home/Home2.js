@@ -59,9 +59,11 @@ function Home2() {
               <br/>
               <br/>
               &nbsp;
-              If you want to build a project ,just contact the <i>
-                <b className="purple"> QICKZO.COM </b>
-              </i>we are ready to build the project
+              If you have a idea ,just contact the <i>
+                <b className="purple"> QICKZO </b>
+              </i>we are ready to build the project/products
+              &nbsp;
+              <b className="purple" > WWW.QICKZO.COM </b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -74,7 +76,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="red">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
