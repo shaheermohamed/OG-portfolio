@@ -23,6 +23,21 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <h1 style={{ color: "white" }}>React Projects</h1>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              //imgPath={chatify}
+              isBlog={false}
+              title="Mapty"
+              description="Application shows current location of yours and you can mark Running or Cycling activity on maps and it is store in local storage and retrieve from locastrogae also"
+              ghLink="https://github.com/shaheermohamed/Mapty"
+              demoLink="https://mapty-javascript-udemy.netlify.app/"
+            />
+          </Col>
+
+
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               //imgPath={chatify}
