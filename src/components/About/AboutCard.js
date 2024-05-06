@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Mohamed Shaheer </span>
             from <span className="purple"> Kerala, India.</span>
-            <br />Now i am working in Tata Consultancy Services
+            <br />Now i am working in CodeRythm Technology Pvt Ltd
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
-import my from "../../Assets/my.png"
+import my from "../../Assets/my.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -20,55 +20,53 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love to Build Something and I have at least learnt
-              something, I think… 🤷‍♂️
+              I am a experienced Full Stack Developer with a passion for
+              building responsive and user-friendly web and mobile applications
               <br />
-              <br />I am fluent in classics like
+              <br />I have extensive experience with a wide range of
+              technologies for full-stack web and mobile app development
+              <br />
+              <br />
+              Frontend Technologies : &nbsp;
               <i>
-                <b className="purple"> Javascript and Python</b>
-              </i>
-              <br />
-              <br />And also i have worked on using these languages and technologies
-              <i>
-                <b className="purple"> Java , AWS etc... </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also{" "}
                 <b className="purple">
-                  i want to build our own company<span style={{ padding: 10,color:'rgba(255, 0, 0, 0.8)'}}> Qickzo</span> 
+                  React JS ,React Native, Javascript, HTML5, CSS, Bootstrap,
+                  Material UI, Tailwind CSS, Ant Design
                 </b>
               </i>
               <br />
               <br />
-              Now i'am on the mission that the learning MERN stack to build products thats are
-              with <b className="purple">Node.js</b> and
+              Backend Technologies : &nbsp;
               <i>
                 <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
+                  Serverless (MongoDB Realm), Node JS, Express JS{" "}
                 </b>
               </i>
-              &nbsp; like
+              <br />
+              <br />
+              Database & Server Tools : &nbsp;
               <i>
-                <b className="purple"> React.js </b>
+                <b className="purple">
+                  MongoDB, Google Cloud Platform, AWS, Firebase, Heroku, Netlify
+                </b>
               </i>
-              <br/>
-              <br/>
-              &nbsp;
-              If you have a idea ,just contact the <i>
-                <b className="purple"> QICKZO </b>
-              </i>we are ready to build the project/products
-              &nbsp;
-              <b className="purple" > WWW.QICKZO.COM </b>
+              <br />
+              <br />
+              Project Management Tools : &nbsp;
+              <i>
+                <b className="purple">Jira, Slack</b>
+              </i>
+              <br />
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img style={{padding:"10px"}} src={my} className="img-fluid" alt="avatar" />
+              <img
+                style={{ padding: "10px" }}
+                src={my}
+                className="img-fluid"
+                alt="avatar"
+              />
             </Tilt>
           </Col>
         </Row>
