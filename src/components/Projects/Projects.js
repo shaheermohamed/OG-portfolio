@@ -3,30 +3,32 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-// import leaf from "../../Assets/Projects/leaf.png";
-// import emotion from "../../Assets/Projects/emotion.png";
-// import editor from "../../Assets/Projects/codeEditor.png";
-// import chatify from "../../Assets/Projects/chatify.png";
-// import suicide from "../../Assets/Projects/suicide.png";
-// import bitsOfCode from "../../Assets/Projects/blog.png";
+import mapty from "../../Assets/Projects/mapty.png";
+import birthday from "../../Assets/Projects/birthday.png";
+import color from "../../Assets/Projects/color.png";
+import jobPortal from "../../Assets/Projects/jobs-portal.png";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <h1 style={{ color: "white" }}>React Projects</h1>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jobPortal}
+              isBlog={false}
+              title="Job Portal"
+              description="This Application for searching jobs "
+              ghLink="https://github.com/shaheermohamed/job-portals"
+              demoLink="https://job-portals-client.onrender.com/"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              //imgPath={chatify}
+              imgPath={mapty}
               isBlog={false}
               title="Mapty"
               description="Application shows current location of yours and you can mark Running or Cycling activity on maps and it is store in local storage and retrieve from locastrogae also"
@@ -35,12 +37,9 @@ function Projects() {
             />
           </Col>
 
-
-
-
           <Col md={4} className="project-card">
             <ProjectCard
-              //imgPath={chatify}
+              imgPath={birthday}
               isBlog={false}
               title="Birthay reminder"
               description="is shows future coming birthday"
@@ -51,7 +50,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              //imgPath={chatify}
+              imgPath={color}
               isBlog={false}
               title="color generator "
               description="user can generator different color shades and pick them also,created using react js"
@@ -59,7 +58,7 @@ function Projects() {
               demoLink="https://colorr-generatorr-reactjs.netlify.app/"
             />
           </Col>
-{/* 
+          {/* 
           <Col md={4} className="project-card">
             <ProjectCard
               //imgPath={bitsOfCode}
