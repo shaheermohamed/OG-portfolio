@@ -9,8 +9,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
- const resumeLink =
-   "https://github.com/shaheermohamed/OG-portfolio/blob/master/src/Assets/Resume.pdf";
+const resumeLink = "https://beige-lane-12.tiiny.site";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -35,13 +34,17 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+        <Row className="resume d-none d-lg-flex">
+          <Document file={pdf} className="d-flex justify-content-center">
+            <Page pageNumber={1} scale={width > 786 ? 1 : 1} />
+            <Page pageNumber={2} scale={width > 786 ? 1 : 1} />
           </Document>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row
+          style={{ justifyContent: "center", position: "relative" }}
+          className="d-none d-lg-flex"
+        >
           <Button
             variant="primary"
             href={pdf}

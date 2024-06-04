@@ -1,38 +1,48 @@
-import React from 'react'
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
-import './contact.css'
-import 'bootstrap/dist/css/bootstrap.css';
-import { useRef as UseRef  } from 'react';
-import emailjs from 'emailjs-com';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-
-
+import "./contact.css";
+import "bootstrap/dist/css/bootstrap.css";
+import { useRef as UseRef } from "react";
+import emailjs from "emailjs-com";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 function contact() {
-    const formRef = UseRef()
- 
-  const handleSubmit = (e)=>{
-    e.preventDefault()
-    emailjs.sendForm('service_t7lwshu', 'template_ywrg3nl', formRef.current, 'Dn_82kyZYaJ6xW9Km')
-    .then((result) => {
-        console.log(result.text);
-        alert("SUCCESS!");
-      
-    }, (error) => {
-        console.log(error.text);
-        alert("FAILED...", error);
-    });
-  }
+  const formRef = UseRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_t7lwshu",
+        "template_ywrg3nl",
+        formRef.current,
+        "Dn_82kyZYaJ6xW9Km"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("SUCCESS!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("FAILED...", error);
+        }
+      );
+  };
   return (
     <section>
-        <Container style={{marginTop:'190px'}} className="hsome-section" id="home">
+      <Container
+        // style={{ marginTop: "50px" }}
+        className="hsome-section"
+        id="home"
+      >
         {/* <Particle /> */}
-         <Container className="home-content"> 
-           <Row>  
-             <Col md={7} style={{height:'100vh'}} className="home-header">  
+        <Container className="home-content">
+          <Row>
+            <Col md={7} style={{ height: "100vh" }} className="home-header">
               {/* <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -55,50 +65,61 @@ function contact() {
         </form>
         </div> */}
 
-        <Form ref={formRef} onSubmit={handleSubmit}>
-      <Form.Group className="mb-3" controlId="formBasicName">
-        <Form.Label>Your Name</Form.Label>
-        <Form.Control type="name" name="user_name" placeholder="Enter Name" />
-        {/* <Form.Text className="text-muted">
+              <Form ref={formRef} onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="formBasicName">
+                  <Form.Label>Your Name</Form.Label>
+                  <Form.Control
+                    type="name"
+                    name="user_name"
+                    placeholder="Enter Name"
+                  />
+                  {/* <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text> */}
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Your Email address</Form.Label>
-        <Form.Control type="email" name="user_email"  placeholder="Enter email" />
-        {/* <Form.Text className="text-muted">
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Label>Your Email address</Form.Label>
+                  <Form.Control
+                    type="email"
+                    name="user_email"
+                    placeholder="Enter email"
+                  />
+                  {/* <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text> */}
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicSubject">
-        <Form.Label>Subject</Form.Label>
-        <Form.Control type="subject" name="user_subject" placeholder="Enter subject" />
-        {/* <Form.Text className="text-muted">
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicSubject">
+                  <Form.Label>Subject</Form.Label>
+                  <Form.Control
+                    type="subject"
+                    name="user_subject"
+                    placeholder="Enter subject"
+                  />
+                  {/* <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text> */}
-      </Form.Group> 
-      <Form.Group className="mb-3" controlId="formBasicMessage">
-        <Form.Label>Your Message</Form.Label>
-        <Form.Control style={{padding:"40px"}} type="message"name="message" placeholder="Enter Your Message" />
-        {/* <Form.Text className="text-muted">
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicMessage">
+                  <Form.Label>Your Message</Form.Label>
+                  <Form.Control
+                    style={{ padding: "40px" }}
+                    type="message"
+                    name="message"
+                    placeholder="Enter Your Message"
+                  />
+                  {/* <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text> */}
-      </Form.Group>
+                </Form.Group>
 
+                <Button variant="primary" type="submit">
+                  Submit
+                </Button>
+              </Form>
+              <Particle />
 
-
-
-      
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
-    <Particle />
-
-               <div style={{ padding: 50, textAlign: "left" }}>
-                
-              </div>
-             </Col> 
+              <div style={{ padding: 50, textAlign: "left" }}></div>
+            </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
@@ -107,13 +128,12 @@ function contact() {
                 className="img-fluid"
                 style={{ maxHeight: "800px" }}
               />
-            </Col> 
-           </Row>
+            </Col>
+          </Row>
         </Container>
-      </Container> 
-       
+      </Container>
     </section>
-  )
+  );
 }
 
-export default contact
+export default contact;
