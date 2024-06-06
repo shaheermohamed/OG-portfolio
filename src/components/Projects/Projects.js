@@ -14,6 +14,7 @@ import mercheApp from "../../Assets/Projects/merche-business-app.png";
 import fakhra from "../../Assets/Projects/fakhra.png";
 import sayartak from "../../Assets/Projects/sayartak.png";
 import mediaone from "../../Assets/Projects/mediaOne.png";
+import chatApp from "../../Assets/Projects/chatApp.png";
 
 function Projects() {
   return (
@@ -22,6 +23,17 @@ function Projects() {
       <Container>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <h1 style={{ color: "white" }}>Projects</h1>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatApp}
+              isBlog={false}
+              title="Chat App"
+              description="This is a Chat App created by using ReactJs, Nodejs, ExpressJs, Web Socket-socket.io, Chakra UI,JWT Authentication"
+              ghLink="https://github.com/shaheermohamed/chat-app-web-socket"
+              demoLink="https://chat-app-hk34.onrender.com/"
+              projectType=""
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={mediaone}
