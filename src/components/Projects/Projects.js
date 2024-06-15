@@ -15,6 +15,7 @@ import fakhra from "../../Assets/Projects/fakhra.png";
 import sayartak from "../../Assets/Projects/sayartak.png";
 import mediaone from "../../Assets/Projects/mediaOne.png";
 import chatApp from "../../Assets/Projects/chatApp.png";
+import appleWebsite from "../../Assets/Projects/apple-website.png";
 
 function Projects() {
   return (
@@ -23,6 +24,17 @@ function Projects() {
       <Container>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <h1 style={{ color: "white" }}>Projects</h1>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={appleWebsite}
+              isBlog={false}
+              title="Apple iPhone"
+              description="This branding website created by using ReactJs,tailwindCSS,Gsap,Three.js"
+              ghLink="https://github.com/shaheermohamed/Apple-website"
+              demoLink="https://apple-website-tfx3.onrender.com"
+              projectType=""
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatApp}
